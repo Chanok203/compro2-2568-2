@@ -14,14 +14,11 @@ public class NumTable2 {
         int N = sc.nextInt();
         int prev = -1;
         int count = 1;
-
         for (int i = 0; i < N; i++) {
             int r = sc.nextInt();
             int c = sc.nextInt();
-
             boolean isvalidR = (1 <= r && r <= R);
             boolean isvalidC = (1 <= c && c <= C);
-
             if (isvalidR && isvalidC) {
                 if (arr[r][c] == prev) {
                     System.out.print("*");
